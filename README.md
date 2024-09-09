@@ -1,8 +1,9 @@
 # N2HE-cosine-similarity-batch
 This is a C++ open-source library which implements a FHE-based batched cosine similarity evaluation algorithm. 
 
-We use the BFV scheme as the underlying FHE scheme and design a batched cosine similarity evaluation algorithm. The input is an encrypted n-dimension vector Enc($\vec{a}$) and $N$ encrypted vectors Enc($\vec{b}_1,\vec{b}_2,...,\vec{b}_N$).
-All these vectors should have $l_2$-norm $1$. 
+We use the BFV scheme as the underlying FHE scheme and design a batched cosine similarity evaluation algorithm. 
+
+The input is an encrypted n-dimension vector Enc($\vec{a}$) and $N$ encrypted vectors Enc($\vec{b}_1,\vec{b}_2,...,\vec{b}_N$). All these vectors should have $l_2$-norm $1$. 
 
 The algorithm will output all the $N$ cosine similarities of $\vec{a}$ and $\vec{b}_i$, $\forall i$. 
 
